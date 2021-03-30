@@ -9,6 +9,10 @@ table {
   @include respond(tab-land) {
     width: 40rem;
   }
+  @include respond(phone) {
+    width: 100%;
+    font-size: smaller;
+  }
 }
 .tr {
   color: $color-light-blue-text;

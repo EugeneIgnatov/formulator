@@ -15,8 +15,8 @@ function App() {
   const [formula, setFormula] = useState('Elecare Infant');
   const selectedFormula = data.find((f) => f.name === formula);
 
-  const [kcalOz, setKcalOz] = useState('');
-  const [scoops, setScoops] = useState('');
+  const [kcalOz, setKcalOz] = useState(0);
+  const [scoops, setScoops] = useState(0);
 
   return (
     <div className='App'>
