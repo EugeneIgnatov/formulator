@@ -1,24 +1,24 @@
-@import '../base.scss';
+// @import '../base.scss';
 
-.header_input {
-  display: flex;
-  justify-content: space-around;
+// .header_input {
+//   display: flex;
+//   justify-content: space-around;
 
-  & h3 {
-    font-size: 2.15rem;
-    margin-bottom: 1rem;
-  }
-  & input {
-    height: 4rem;
-    outline: none;
-    border: none;
-    border-radius: 0.5rem;
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.35);
-    font-size: larger;
-    color: rgba(0, 0, 0, 0.6);
-    margin-bottom: 4rem;
-    text-align: center;
-    width: 13rem;
-    margin-right: 2rem;
-  }
-}
+//   & h3 {
+//     font-size: 2.15rem;
+//     margin-bottom: 1rem;
+//   }
+//   & input {
+//     height: 4rem;
+//     outline: none;
+//     border: none;
+//     border-radius: 0.5rem;
+//     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.35);
+//     font-size: larger;
+//     color: rgba(0, 0, 0, 0.6);
+//     margin-bottom: 4rem;
+//     text-align: center;
+//     width: 13rem;
+//     margin-right: 2rem;
+//   }
+// }

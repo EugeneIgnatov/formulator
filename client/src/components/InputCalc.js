@@ -9,6 +9,7 @@ const InputCalc = ({ kcalOz, setKcalOz, scoops, setScoops }) => {
         <h3>KCAL/ oz.</h3>
         <CurrencyInput
           inputMode='decimal'
+          precision='1'
           value={kcalOz}
           onChange={(e, maskedvalue) => {
             setKcalOz(maskedvalue);
@@ -19,6 +20,7 @@ const InputCalc = ({ kcalOz, setKcalOz, scoops, setScoops }) => {
         <h3 htmlFor='scoops'>#Scoops</h3>
         <CurrencyInput
           inputMode='decimal'
+          precision='1'
           value={scoops}
           onChange={(e, maskedvalue) => {
             setScoops(maskedvalue);

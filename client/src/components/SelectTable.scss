@@ -1,35 +1,35 @@
-@import '../base.scss';
+// @import '../base.scss';
 
-table {
-  margin-bottom: 5rem;
-  margin-top: 4rem;
-  border-collapse: collapse;
-  text-align: center;
-  width: 45rem;
-  @include respond(tab-land) {
-    width: 40rem;
-  }
-  @include respond(phone) {
-    width: 100%;
-    font-size: smaller;
-  }
-}
-.tr {
-  color: $color-light-blue-text;
-  font-size: small;
-}
+// table {
+//   margin-bottom: 5rem;
+//   margin-top: 4rem;
+//   border-collapse: collapse;
+//   text-align: center;
+//   width: 45rem;
+//   @include respond(tab-land) {
+//     width: 40rem;
+//   }
+//   @include respond(phone) {
+//     width: 100%;
+//     font-size: smaller;
+//   }
+// }
+// .tr {
+//   color: $color-light-blue-text;
+//   font-size: small;
+// }
 
-td {
-  font-size: 1.5rem;
-  line-height: 2.7rem;
-}
-.table-data-row-top {
-  border-bottom: 1px solid $color-white;
-}
-.table-data-row-bottom {
-  border-top: 1px solid $color-white;
-}
+// td {
+//   font-size: 1.5rem;
+//   line-height: 2.7rem;
+// }
+// .table-data-row-top {
+//   border-bottom: 1px solid $color-white;
+// }
+// .table-data-row-bottom {
+//   border-top: 1px solid $color-white;
+// }
 
-.table-data-cell-right {
-  border-right: 1px solid $color-white;
-}
+// .table-data-cell-right {
+//   border-right: 1px solid $color-white;
+// }
