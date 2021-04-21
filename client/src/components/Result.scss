@@ -1,26 +1,37 @@
 @import '../base.scss';
 
 .section {
-  padding: 4rem 2rem;
-
   & h3 {
-    font-size: large;
+    margin-bottom: 2rem;
   }
   &_water-ml {
     font-size: 7rem;
     text-align: end;
   }
-  //   & span {
-  //     font-size: 3rem;
-  //     color: $color-light-blue-text;
-  //   }
-  //   &_water-oz {
-  //     font-size: 5rem;
-  //     color: $color-light-blue-text;
-  //     margin-left: 33%;
-  //   }
+  & span {
+    font-size: 3rem;
+    color: $color-light-blue-text;
+  }
+  &_water-oz {
+    font-size: 5rem;
+    color: $color-light-blue-text;
+    text-align: end;
+  }
 
-  //   @include respond(phone) {
-  //     padding: 6rem 0 0 6rem;
-  //   }
+  @include respond(phone) {
+    .section {
+      & h3 {
+        margin-bottom: 0;
+      }
+      &_water-ml {
+        font-size: 3.5rem;
+      }
+      & span {
+        font-size: 1.5rem;
+      }
+      &_water-oz {
+        font-size: 2.5rem;
+      }
+    }
+  }
 }

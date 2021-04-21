@@ -3,18 +3,7 @@ import './Result.scss';
 import { V, D, W, O } from '../helpers/helpers';
 
 const Result = ({ selectedFormula, kcalOz, scoops }) => {
-  const {
-    kcal_Scp,
-    kcal_g,
-    // g_prot_g_poweder,
-    g_poweder_scp,
-    // g_poweder_level_cup,
-    // g_poweder_tbls,
-    // g_poweder_tsp,
-    disp,
-    g_poweder_can,
-    // oz_lbs_powder_can,
-  } = selectedFormula;
+  const { kcal_Scp, g_poweder_scp, disp } = selectedFormula;
 
   const Vresult = V(kcal_Scp, kcalOz, scoops);
   const Dresult = D(disp, g_poweder_scp, scoops);

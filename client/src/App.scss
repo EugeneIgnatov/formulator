@@ -40,18 +40,45 @@ body {
     $color-dark-blue-radial 100%
   );
   color: $color-white;
-  padding: 10em 20rem;
   font-weight: 400;
-  display: flex;
-  justify-content: space-between;
+}
+.container {
+  display: grid;
+  // height: 100vh;
+  padding: 6rem 15rem;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
+  row-gap: 4rem;
+  column-gap: 4rem;
+  grid-template-areas: 'box1 box2' 'data  result' 'tableCalc .';
 
-  @include respond(tab-land) {
-    padding: 10rem 10rem;
-  }
   @include respond(tab-port) {
-    padding: 1rem 1rem;
+    padding: 2rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
+    row-gap: 1rem;
+    grid-template-areas: 'box4' 'box1' 'box2' 'data' 'tableCalc';
   }
   @include respond(phone) {
-    display: block;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    row-gap: 1rem;
+    grid-template-areas: 'box4' 'box1' 'box2' 'data' 'tableCalc';
   }
+}
+
+.selected-formula {
+  grid-area: box1;
+}
+.input-mode {
+  grid-area: box2;
+}
+.data {
+  grid-area: data;
+}
+.result {
+  grid-area: result;
+}
+.table-result {
+  grid-area: tableCalc;
 }

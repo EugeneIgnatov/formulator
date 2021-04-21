@@ -8,8 +8,6 @@ import data from './data';
 import InputCalc from './components/InputCalc';
 import Result from './components/Result';
 import TableCalc from './components/TableCalc';
-import Desktop from './shared/Desktop';
-import Mobile from './shared/Mobile';
 
 function App() {
   const [formula, setFormula] = useState('Elecare Infant');
@@ -20,50 +18,36 @@ function App() {
 
   return (
     <div className='App'>
-      <Desktop>
-        <div>
+      <main className='container'>
+        <div className='selected-formula'>
           <Select formula={formula} setFormula={setFormula} />
-          <SelectTable selectedFormula={selectedFormula} />
-          <TableCalc
-            selectedFormula={selectedFormula}
-            kcalOz={kcalOz}
-            scoops={scoops}
-          />
         </div>
-        <div>
+        <div className='input-mode'>
           <InputCalc
             kcalOz={kcalOz}
             setKcalOz={setKcalOz}
             scoops={scoops}
             setScoops={setScoops}
           />
+        </div>
+        <div className='data'>
+          <SelectTable selectedFormula={selectedFormula} />
+        </div>
+        <div className='results'>
           <Result
             selectedFormula={selectedFormula}
             kcalOz={kcalOz}
             scoops={scoops}
           />
         </div>
-      </Desktop>
-      <Mobile>
-        <Result
-          selectedFormula={selectedFormula}
-          kcalOz={kcalOz}
-          scoops={scoops}
-        />
-        <Select formula={formula} setFormula={setFormula} />
-        <InputCalc
-          kcalOz={kcalOz}
-          setKcalOz={setKcalOz}
-          scoops={scoops}
-          setScoops={setScoops}
-        />
-        <SelectTable selectedFormula={selectedFormula} />
-        <TableCalc
-          selectedFormula={selectedFormula}
-          kcalOz={kcalOz}
-          scoops={scoops}
-        />
-      </Mobile>
+        <div className='table-result'>
+          <TableCalc
+            selectedFormula={selectedFormula}
+            kcalOz={kcalOz}
+            scoops={scoops}
+          />
+        </div>
+      </main>
     </div>
   );
 }
